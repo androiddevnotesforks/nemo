@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.theapache64.nemo.data.remote.Config
 import com.theapache64.nemo.databinding.ItemCartBinding
-import me.himanshusoni.quantityview.QuantityView
+// import me.himanshusoni.quantityview.QuantityView
 
 /**
  * Created by theapache64 : Sep 19 Sat,2020 @ 18:26
@@ -38,16 +38,16 @@ class CartAdapter(
     }
 
 
-    inner class ViewHolder(val binding: ItemCartBinding) : RecyclerView.ViewHolder(binding.root),
-        QuantityView.OnQuantityChangeListener {
+    inner class ViewHolder(val binding: ItemCartBinding) : RecyclerView.ViewHolder(binding.root)/*,
+        QuantityView.OnQuantityChangeListener*/ {
         init {
-            binding.qvCartQuantity.onQuantityChangeListener = this
+            // binding.qvCartQuantity.onQuantityChangeListener = this
             binding.bRemove.setOnClickListener {
                 callback.onRemoveClicked(layoutPosition)
             }
         }
 
-        override fun onQuantityChanged(
+        /*override fun onQuantityChanged(
             oldQuantity: Int,
             newQuantity: Int,
             programmatically: Boolean
@@ -57,7 +57,7 @@ class CartAdapter(
 
         override fun onLimitReached() {
 
-        }
+        }*/
     }
 
     interface Callback {

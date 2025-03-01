@@ -18,7 +18,7 @@ import javax.inject.Inject
  * Created by theapache64 : Jul 26 Sun,2020 @ 22:07
  */
 @HiltViewModel
-class SplashViewModel @Inject public constructor(
+class SplashViewModel @Inject constructor(
     private val configRepo: ConfigRepo,
     private val analyticsRepo: AnalyticsRepo
 ) : BaseViewModel() {

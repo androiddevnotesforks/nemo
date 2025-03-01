@@ -61,7 +61,7 @@
                 tools:src="@tools:sample/backgrounds/scenic" />
 
             <!--Quantity Adjuster-->
-            <me.himanshusoni.quantityview.QuantityView
+            <!--<me.himanshusoni.quantityview.QuantityView
                 android:id="@+id/qv_cart_quantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                 app:qv_quantityBackground="@android:color/transparent"
                 app:qv_quantityDialog="false"
                 app:qv_quantityPadding="15dp"
-                app:qv_removeButtonBackground="@drawable/quantity_button_bg" />
+                app:qv_removeButtonBackground="@drawable/quantity_button_bg" />-->
 
             <!--Remove from cart-->
             <Button
@@ -88,7 +88,7 @@
                 android:textColor="@color/red_500"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/qv_cart_quantity" />
+                app:layout_constraintTop_toBottomOf="@id/iv_product_image" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
